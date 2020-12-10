@@ -39,6 +39,13 @@ namespace Retegan_Alexandru_L10
                 });
             }
         }
+        async void OnChooseButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProductPage((ShopList)this.BindingContext)
+            {
+                BindingContext = new Product()
+            });
+        }
     }
 
 }

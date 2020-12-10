@@ -25,7 +25,7 @@ namespace Retegan_Alexandru_L10
             InitializeComponent();
             MainPage = new NavigationPage(new ListEntryPage());
 
-            MainPage = new MainPage();
+            
         }
 
         protected override void OnStart()
